@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Commissioner' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Validador DNI</title>
+</head>
+<body>
+
+    <header>
+        <h1>Ejercicio DNI</h2>
+    </header>
+
+    <div id="doble_formulario">
+
+        <section class="acceso" id="validar_letra">
+          <form class="formulario_vertical">
+            <caption><h2>Valida la letra de tu DNI</h2></caption>
+          <label>DNI completo:</label>
+          <input id="DNI_completo" type="text" required>
+          <input class="boton_acceso" type="button" value="Validar" onclick="validar_DNI();">
+          </form>
+          <p class="resultado"></p>
+        </section>
+    
+      <section class="acceso" id="generar_letra">
+          <form class="formulario_vertical">
+            <caption><h2>Genera una letra para tu DNI</h2></caption>
+          <label>DNI sin letra:</label>
+          <input id="DNI_sin_letra" type="text" required>
+          <input class="boton_acceso" type="button" value="Generar" onclick="generar_DNI();">
+         </form>
+         <p class="resultado"></p>
+        </section>
+    
+    </div>
+
+    <footer>
+        <small>Carla, 2ºDAW B</small>
+    </footer>
+    
+</body>
+</html>
